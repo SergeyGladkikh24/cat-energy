@@ -1,0 +1,276 @@
+.categories__list {
+  @include reset;
+}
+.categories__list-item {
+  list-style: none;
+  background-color: #f2f2f2;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top:22px;
+  padding-left: 20px;
+  padding-right: 46px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom:20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 20px;
+    top: 24px;
+    background-color: $accent-color;
+  }
+}
+
+.categories__icon {
+  position: absolute;
+
+  &--slim {
+    width: 35px;
+    height: 50px;
+    padding-top: 2px;
+    padding-left: 8px;
+  }
+
+  &--pro {
+    width: 69px;
+    height: 28px;
+    padding-top: 17px;
+    margin-left: -10px;
+  }
+}
+
+.categories__name {
+  @include reset;
+
+  padding-top: 9px;
+  padding-left:70px;
+
+  font-size: 24px;
+  line-height: 37.02px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.categories__text {
+  @include reset;
+  padding-bottom: 25px;
+  margin-top: 27px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+  font-family: "Arial",sans-serif;
+
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.categories__link {
+  position: relative;
+  max-width: 131px;
+  display: block;
+  margin-top: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: #3e4242;
+    left: 96px;
+    top: 13px;
+    transition: all 0.2s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    border-left: 6px solid #3e4242;
+    right:7px;
+    top: 9px;
+    transition: all 0.2s;
+  }
+
+  &:hover::before {
+    width:26px;
+  }
+
+  &:hover::after {
+    right:-2px;
+  }
+
+  &:focus {
+    opacity:0.3;
+  }
+
+  &:focus::before {
+    width:26px;
+  }
+
+  &:focus::after {
+    right:-2px;
+  }
+}
+
+.categories__name-link {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+@media(min-width: $tablet-width) {
+  .categories__list {
+    max-width: 1074px;
+    margin:0 auto;
+  }
+  .categories__list-item {
+    padding:0;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 63px;
+    padding-left: 51px;
+    padding-right: 61px;
+    padding-bottom: 35px;
+
+      &::before {
+        width: 200px;
+        height: 200px;
+        left: auto;
+        right: 63px;
+        top: 89px;
+      }
+  }
+
+  .categories__icon {
+
+    &--slim {
+      width: 140px;
+      height: 194px;
+      padding: 0;
+      right: 93px;
+      top: 78px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 112px;
+      padding: 0;
+      top: 132px;
+      right: 31px;
+    }
+  }
+
+  .categories__name {
+    font-size: 36px;
+    line-height: 37.02px;
+    padding-left: 0;
+  }
+
+  .categories__text {
+    padding-bottom: 0;
+    margin-bottom: 54px;
+    width: 57%;
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  .categories__link {
+    max-width: 170px;
+    margin-top: 0;
+
+     &::before {
+      left: 130px;
+      top: 12px;
+    }
+
+    &::after {
+      right:12px;
+      top: 8px;
+    }
+
+
+    &:hover::after {
+      right:3px;
+    }
+
+    &:focus::after {
+      right:3px;
+    }
+  }
+
+  .categories__name-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: none;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin:0 auto;
+    margin-top: 70px;
+  }
+  .categories__list-item {
+    padding:0;
+    margin:0;
+    padding-top: 40px;
+    padding-left: 52px;
+    padding-right: 21px;
+    padding-bottom: 61px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 51px;
+      top: 47px;
+    }
+  }
+
+  .categories__icon {
+
+    &--slim {
+      width: 70px;
+      height: 97px;
+      top:41px;
+      left: 65px;
+    }
+
+    &--pro {
+      width: 134px;
+      height: 56px;
+      left:43px;
+      top: 68px;
+    }
+  }
+
+  .categories__name {
+    padding-top: 35px;
+    padding-left:162px;
+  }
+
+  .categories__text {
+    @include reset;
+    width:495px;
+    margin-top: 71px;
+    margin-bottom:30px;
+  }
+
+}
+

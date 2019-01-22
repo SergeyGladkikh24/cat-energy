@@ -1,0 +1,21 @@
+section.catalog-byproducts
+  h2.catalog-byproducts__title.block-title
+    span.catalog-byproducts__title-text Дополнительные товары
+  .catalog-byproducts__wrapper
+    table.catalog-byproducts__list.additionally-list
+      each item in byproductsObj
+        tr.additionally-list__item
+          td.additionally-list__name=item["name"]
+          td.additionally-list__wrapper-values
+            p.additionally-list__value.additionally-list__value--unit=item["unit"]
+            p.additionally-list__value.additionally-list__value--price=item["price"]
+          td.additionally-list__link-wrapper
+            a(class="additionally-list__link button" href="form.html") Заказать
+    .catalog-byproducts__bonuses.bonuses
+      .catalog-byproducts__bonuses-wrapper
+        h2.visually-hidden Бонусы к товарам
+        .bonuses__wrapper
+          .bonuses__icon-wrapper
+            svg.bonuses__icon.bonuses__icon--gift(width="55" height="60")
+              use(xlink:href="#gift")
+          p.bonuses__text Закажите все <br> и получите чехол для кота в подарок!

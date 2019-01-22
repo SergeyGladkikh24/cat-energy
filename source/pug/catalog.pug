@@ -1,0 +1,127 @@
+extends _loyouts/template-page
+
+block variables
+  -var namePage="Каталог продукции";
+  -
+    var catalogObj = [
+      {
+        classMain: "products__item--small",
+        classLastBlocks: " ",
+        classImg: "products__image--small",
+        nameImg:"catalog-1",
+        title:"Cat Energy PRO 500 г",
+        volume:"500 г",
+        taste: "Курица",
+        price: "700 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy PRO 500 г"
+      },{
+        classMain: "products__item--large",
+        classLastBlocks: " ",
+        classImg: "products__image--large",
+        nameImg:"catalog-2",
+        title:"Cat Energy PRO 1000 г",
+        volume:"1000 г",
+        taste: "Курица",
+        price: "1000 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy PRO 1000 г"
+      },{
+        classMain: "products__item--small",
+        classLastBlocks: " ",
+        classImg: "products__image--small",
+        nameImg:"catalog-3",
+        title:"Cat Energy PRO 500 г",
+        volume:"500 г",
+        taste: "Рыба",
+        price: "700 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy PRO 500 г"
+      },{
+        classMain: "products__item--large",
+        classLastBlocks: " ",
+        classImg: "products__image--large",
+        nameImg:"catalog-4",
+        title:"Cat Energy PRO 1000 г",
+        volume:"1000 г",
+        taste: "Рыба",
+        price: "1000 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy PRO 500 г"
+      },{
+        classMain: "products__item--small",
+        classLastBlocks: "products__item--last",
+        classImg:"products__image--small",
+        nameImg:"catalog-5",
+        title:"Cat Energy Slim 500 г",
+        volume:"500 г",
+        taste: "Гречка",
+        price: "400 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy Slim 500 г"
+      },{
+        classMain: "products__item--large",
+        classLastBlocks: "products__item--last",
+        classImg: "products__image--large",
+        nameImg:"catalog-6",
+        title:"Cat Energy Slim 1000 г",
+        volume:"1000 г",
+        taste: "Гречка",
+        price: "700 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy Slim 1000 г"
+      },{
+        classMain: "products__item--small",
+        classLastBlocks: "products__item--last",
+        classImg:"products__image--small",
+        nameImg:"catalog-7",
+        title:"Cat Energy Slim 500 г",
+        volume:"500",
+        taste: "Рис",
+        price: "500 Р.",
+        width:"140",
+        height:"144",
+        alt:"Cat Energy Slim 500 г",
+      }
+    ]
+
+  -
+    var byproductsObj = [
+      {
+        name:"Сахарозаменитель",
+        unit:"1 упаковка (100 г)",
+        price:"100 Р."
+      },{
+        name:"Питьевая вода",
+        unit:"5 литров",
+        price:"50 Р."
+      },{
+        name:"Молоко",
+        unit:"1 литр",
+        price:"100 Р."
+      },{
+        name:"Витамины",
+        unit:"1 упаковка (30 г)",
+        price:"300 Р."
+      }
+    ]
+
+block title
+  if(namePage===undefined)
+    title Cat Energy-функциональное питание для котов
+  else
+    title #{namePage}
+
+block content
+  main.page-catalog
+    h1.page-catalog__title.block-title Каталог продукции
+
+    include _partials/catalog-main
+    include _partials/catalog-byproducts
+    include _partials/contacts

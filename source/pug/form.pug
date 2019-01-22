@@ -1,0 +1,16 @@
+extends _loyouts/template-page
+
+block variables
+  -var namePage="Подобрать программу";
+
+block title
+  if(namePage===undefined)
+    title Cat Energy-функциональное питание для котов
+  else
+    title #{namePage}
+
+block content
+  main.page-form
+    h1.page-form__title.block-title Подбор программы
+    include _partials/form-application
+    include _partials/contacts

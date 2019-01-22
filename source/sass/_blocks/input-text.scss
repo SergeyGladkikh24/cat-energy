@@ -1,0 +1,28 @@
+.input-text {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald","Arial",sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+  background-color: #ffffff;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+
+  @include placeholder(#444444);
+}
+
+@media(min-width: $tablet-width) {
+  .input-text {
+    height: 52px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 18px;
+    padding-left: 18px;
+    box-sizing: border-box;
+  }
+}

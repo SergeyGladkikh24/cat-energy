@@ -1,0 +1,20 @@
+mixin linkHeader(namePage)
+  if(namePage === "Главная")
+    a(class="page-header__logo-link")
+      picture
+        source(media="(min-width:1300px)" srcset="img/logo-desktop.svg")
+        source(media="(min-width:768px)" srcset="img/logo-tablet.svg")
+        img(class="page-header__logo-image" src="img/logo-mobile.svg" width="35" height="40" alt="Логотип компании Кэт Энерджи")
+      h2.page-header__title
+        svg(class="page-header__logo-title" width="103" height="20" aria-label="Cat Energy")
+            use(xlink:href="#logo-mobile-header")
+  else
+
+    a(class="page-header__logo-link" href="index.html")
+      picture
+        source(media="(min-width:1300px)" srcset="img/logo-desktop.svg")
+        source(media="(min-width:768px)" srcset="img/logo-tablet.svg")
+        img(class="page-header__logo-image" src="img/logo-mobile.svg" width="35" height="40" alt="Логотип компании Кэт Энерджи")
+      h2.page-header__title
+        svg(class="page-header__logo-title" width="103" height="20" aria-label="Cat Energy")
+            use(xlink:href="#logo-mobile-header")

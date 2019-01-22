@@ -1,0 +1,25 @@
+@media (min-width: $tablet-width) {
+  .catalog-main__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main__wrapper {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 73px;
+  }
+
+  .catalog-main__list {
+    padding-left:40px;
+    padding-right: 40px;
+  }
+
+}

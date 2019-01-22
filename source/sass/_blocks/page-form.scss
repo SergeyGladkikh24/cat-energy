@@ -1,0 +1,17 @@
+.page-form__title {
+  padding-top: 31px;
+  margin-bottom: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media(min-width: $tablet-width) {
+  .page-form__title {
+    padding-top: 58px;
+    margin-bottom: 56px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

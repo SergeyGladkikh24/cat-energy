@@ -1,0 +1,7 @@
+mixin link(titleLink,namePage,hrefLink)
+  if(titleLink === namePage)
+    li.site-list__item
+      a(class="site-list__link site-list__link--active")=titleLink
+  else
+    li.site-list__item
+      a(class="site-list__link" href=hrefLink)=titleLink

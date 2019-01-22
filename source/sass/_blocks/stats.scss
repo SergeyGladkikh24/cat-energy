@@ -1,0 +1,140 @@
+.stats__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin:0 auto;
+  margin-bottom: 19px;
+}
+
+.stats__wrapper-value{
+  width: 44.29%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stats__value-number {
+  @include reset;
+  font-weight: 400;
+  font-size:24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #cdcdcd;
+}
+
+.stats__value-description {
+  @include reset;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  width: 82px;
+  margin-left: 0;
+  text-align: center;
+  z-index: 1;
+  margin-top: -8px;
+  background-color: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats__cost {
+  @include reset;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stats__cost b {
+  font-weight: 400;
+}
+
+@media(min-width: $tablet-width){
+  .stats__wrapper {
+    width: 50%;
+    margin:0;
+    justify-content: space-between;
+  }
+
+  .stats__wrapper-value {
+     width: 44.508%;
+
+     &:last-child {
+      margin-right: 0;
+     }
+  }
+
+  .stats__wrapper-value:nth-child(1) {
+    .stats__value-description {
+      width: 110px;
+    }
+  }
+
+  .stats__wrapper-value:nth-child(2) {
+    .stats__value-description {
+      width: 138px
+    }
+  }
+
+  .stats__value-number {
+    font-size: 30px;
+    line-height: 37.02px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .stats__value-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .stats__cost {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 4px;
+    flex-grow: 1;
+
+    b {
+      display: block;
+      line-height: 30px;
+      text-align: right;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+
+  .stats__wrapper {
+    width: 360px;
+  }
+
+  .stats__wrapper-value {
+    width: 160px;
+  }
+
+  .stats__value-description {
+    background-color: #f2f2f2;
+  }
+
+  .stats__cost {
+    text-align: left;
+    margin-top: 48px;
+  }
+
+  .stats__cost b {
+    display: inline-block;
+    line-height: 30px;
+    text-align: left;
+    flex-grow: auto;
+
+    &:last-child {
+      padding-left: 60px;
+    }
+  }
+}

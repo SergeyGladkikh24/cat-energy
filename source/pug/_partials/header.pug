@@ -1,0 +1,17 @@
+include ../_mixins/link-menu
+include ../_mixins/link-header
+header.page-header
+    .page-header__wrapper
+      +linkHeader(namePage)
+      nav.main-nav.main-nav--hide.main-nav--nojs
+        button(class="main-nav__button" type="button")
+          <span class="visually-hidden">Показать/Скрыть меню</span></button>
+        .main-nav__wrapper
+          ul.main-nav__list.site-list
+            +link("Главная",namePage,"index.html")
+            +link("Каталог продукции",namePage,"catalog.html")
+            +link("Подобрать программу",namePage,"form.html")
+
+
+
+

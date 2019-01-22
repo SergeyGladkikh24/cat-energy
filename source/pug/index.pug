@@ -1,0 +1,23 @@
+extends _loyouts/template-page
+
+block variables
+  -var namePage="Главная";
+
+block title
+  if(namePage===undefined)
+    title Cat Energy-функциональное питание для котов
+  else
+    title #{namePage}
+
+block content
+  main.page-main
+    h1.visually-hidden "Cat Energy" - Функциональное питание для котов
+
+    include _partials/first-screen
+    include _partials/categories
+    include _partials/advantages
+    include _partials/example
+    include _partials/contacts
+
+
+

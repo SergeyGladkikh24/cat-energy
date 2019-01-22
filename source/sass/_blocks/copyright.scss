@@ -1,0 +1,41 @@
+.copyright__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:hover .copyright__icon {
+    fill:$accent-color;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:focus .copyright__icon {
+    fill:$accent-color;
+  }
+}
+
+.copyright__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial",sans-serif;
+  color: #444444;
+  font-weight: 400;
+  align-self: center;
+}
+
+.copyright__icon-wrapper {
+  height: 34px;
+}
+
+.copyright__icon {
+  fill: #666666;
+}
+
+@media(min-width: $tablet-width) {
+  .copyright__icon {
+    padding-left: 23px;
+  }
+}
+

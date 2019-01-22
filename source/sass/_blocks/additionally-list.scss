@@ -1,0 +1,139 @@
+.additionally-list {
+  width: 100%;
+  max-width: 565px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.additionally-list__item {
+  display: block;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 15px;
+
+  &:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.additionally-list__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additionally-list__wrapper-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial",sans-serif;
+  color: #444444;
+}
+
+.additionally-list__value {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.additionally-list__link-wrapper {
+  display: block;
+}
+
+.additionally-list__link {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@media(min-width: $tablet-width) {
+  .additionally-list {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .additionally-list__item {
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-top: 18px;
+    padding-bottom: 25px;
+  }
+
+  .additionally-list__name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally-list__link-wrapper {
+    width: 100%;
+  }
+
+  .additionally-list__wrapper-values {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additionally-list__value {
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .additionally-list {
+    border-collapse: collapse;
+    border-top: 1px solid #cdcdcd;
+    max-width: none;
+    margin:0;
+    width: 895px;
+  }
+
+  .additionally-list__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-right: none;
+    border-left: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:first-child {
+      border-top:none;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .additionally-list__name {
+    flex-grow: 0;
+    margin-right: 40px;
+    width: 245px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .additionally-list__wrapper-values {
+    width: 285px;
+  }
+
+  .additionally-list__value {
+    margin:0;
+  }
+
+  .additionally-list__link-wrapper {
+    width: 245px;
+  }
+
+  .additionally-list__link {
+    margin-right: -1px;
+  }
+}
+
+
+

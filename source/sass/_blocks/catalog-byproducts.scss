@@ -1,0 +1,128 @@
+.catalog-byproducts__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 24px;
+  margin-top: 28px;
+  padding-left: 20px;
+  margin-bottom: 32px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100vw;
+    background-color: $accent-color;
+    margin-left: 23px;
+    top: 14px;
+  }
+}
+
+.catalog-byproducts__list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 37px;
+}
+
+.catalog-byproducts__bonuses-wrapper {
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media(min-width: $tablet-width) {
+  .catalog-byproducts__title {
+    padding-left: 30px;
+    margin-bottom: 77px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100vw;
+      background-color: $accent-color;
+      left:0;
+      top: 23px;
+      z-index: -1;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .catalog-byproducts__title-text {
+    padding-left: 37px;
+    padding-right: 37px;
+    background-color: #ffffff;
+  }
+
+  .catalog-byproducts__list {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .catalog-byproducts__bonuses-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 76px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .catalog-byproducts__title {
+    margin-left:0;
+    padding-left: 0;
+    padding-right: 40px;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+
+    span {
+      padding-left: 40px;
+      padding-right: 36px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      width: 100vw;
+      right: calc(100vw - 1220px);
+      left: auto;
+      z-index: -1;
+    }
+
+    &::after {
+      display: block;
+      display: block;
+      top: 23px;
+      z-index: -1;
+    }
+  }
+
+  .catalog-byproducts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 86px;
+  }
+
+  .catalog-byproducts__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .catalog-byproducts__bonuses-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}
+
