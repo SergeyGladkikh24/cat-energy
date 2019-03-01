@@ -2,6 +2,7 @@ extends _loyouts/template-page
 
 block variables
   -var namePage="Каталог продукции";
+  -var classBody = "page-item";
   -
     var catalogObj = [
       {
@@ -113,10 +114,7 @@ block variables
     ]
 
 block title
-  if(namePage===undefined)
-    title Cat Energy-функциональное питание для котов
-  else
-    title #{namePage}
+  title Кэт Энерджи.Каталог продукции
 
 block content
   main.page-catalog

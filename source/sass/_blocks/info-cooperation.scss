@@ -1,0 +1,50 @@
+.info-cooperation__title {
+  width: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.info-cooperation__adress {
+  width: 140px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  color: #444444;
+
+  b {
+    display: block;
+
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info-cooperation__title {
+    width: 161px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .info-cooperation__adress {
+    width: 160px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: right;
+  }
+
+  .info-cooperation__city {
+    margin-top: 20px;
+  }
+}

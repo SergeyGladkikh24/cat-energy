@@ -1,28 +1,75 @@
 .input-text {
-  padding-left: 13px;
+  box-sizing: border-box;
+  height: 45px;
+  padding-top: 13px;
   padding-right: 13px;
-  padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
-  text-transform: uppercase;
+
   color: #222222;
-  background-color: #ffffff;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  background-color: #ffffff;
+
+  text-transform: uppercase;
 
   @include placeholder(#444444);
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: $darkgrey;
+    outline: none;
+  }
+
+  &--invalid {
+    border: 2px solid $red;
+  }
+
+  &--invalid ~ .form__contacts-icon {
+    fill: $red;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid $red;
+  }
+
+  &:focus:invalid ~ .form__contacts-icon {
+    fill: $red;
+  }
 }
 
-@media(min-width: $tablet-width) {
+.input-text[type="number"]::-webkit-outer-spin-button,
+.input-text[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+.input-text[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-text::-ms-clear {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
   .input-text {
+    box-sizing: border-box;
     height: 52px;
+    padding-top: 6px;
+    padding-right: 18px;
+    padding-bottom: 6px;
+    padding-left: 18px;
+
     font-size: 20px;
     line-height: 30px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 18px;
-    padding-left: 18px;
-    box-sizing: border-box;
   }
 }

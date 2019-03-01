@@ -5,6 +5,7 @@ html(lang="en" class="no-js")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width,initial-scale=1")
+    link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
     link(rel="preload", href="fonts/Oswald-Medium.woff", as="font")
     link(rel="preload", href="fonts/Oswald-Medium.woff2", as="font")
     link(rel="preload", href="fonts/Oswald-Regular.woff", as="font")
@@ -12,22 +13,13 @@ html(lang="en" class="no-js")
     link(rel="stylesheet", href="css/style.min.css")
     block title
 
+  body(class=`${classBody}`)
 
-  if(namePage === "Главная")
-
-    body.page-main
-
-  else
-
-    body.page-item
-
-
-  <div style="display: none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-  include ../_partials/header
-  block content
-  include ../_partials/footer
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv6Uq-G3h-YVW_Durg7TzsedoJ-MYKAms&callback=initMap" async defer></script>
-  script(src="js/script.js")
-  //- script(src="serviceWorker-registration.js")
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    include ../_partials/header
+    block content
+    include ../_partials/footer
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss" async defer></script>
+    script(src="js/script.min.js")

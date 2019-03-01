@@ -1,46 +1,47 @@
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
+
 body {
-    min-width: 320px;
+  @include reset;
 
-    @include reset;
+  overflow-x: hidden;
+  min-width: 320px;
 
-    font-family: "Oswald","Arial",sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 27px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 27px;
 
-    color: #000000;
-    background-color: $bg-white;
-    overflow-x: hidden;
+  color: #000000;
+  background-color: $bg-white;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
+  position: absolute;
 
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
 
-    border: 0;
+  border: 0;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
 }

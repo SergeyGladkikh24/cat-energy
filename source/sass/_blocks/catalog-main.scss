@@ -1,11 +1,12 @@
 @media (min-width: $tablet-width) {
   .catalog-main__list {
     display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    align-items: flex-end;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
@@ -13,13 +14,12 @@
   .catalog-main__wrapper {
     width: 1300px;
     margin-right: auto;
-    margin-left: auto;
     margin-bottom: 73px;
+    margin-left: auto;
   }
 
   .catalog-main__list {
-    padding-left:40px;
     padding-right: 40px;
+    padding-left: 40px;
   }
-
 }

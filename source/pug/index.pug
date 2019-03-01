@@ -2,12 +2,10 @@ extends _loyouts/template-page
 
 block variables
   -var namePage="Главная";
+  -var classBody = "page-main";
 
 block title
-  if(namePage===undefined)
-    title Cat Energy-функциональное питание для котов
-  else
-    title #{namePage}
+  title Кэт Энерджи.Главная страница
 
 block content
   main.page-main
@@ -18,6 +16,3 @@ block content
     include _partials/advantages
     include _partials/example
     include _partials/contacts
-
-
-

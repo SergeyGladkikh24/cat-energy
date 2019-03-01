@@ -1,23 +1,23 @@
 .button {
-    display: block;
-    padding-top: 11px;
-    padding-bottom: 11px;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 
-    color: #ffffff;
-    background-color: $accent-color;
+  color: #ffffff;
+  background-color: $accent-color;
 
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 
-    &:hover {
-      background-color: #5eaa2f;
-    }
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
-    &:focus {
-      color:rgba(255,255,255,0.3);
-    }
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

@@ -1,23 +1,57 @@
 .form-application__call-to-action {
   @include reset;
+
+  margin-bottom: 38px;
+  padding-right: 27px;
+  padding-left: 20px;
+
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  font-family: "Oswald","Arial",sans-serif;
-  text-transform: uppercase;
+
   color: #111111;
-  padding-left: 20px;
-  padding-right: 27px;
-  margin-bottom: 38px;
+
+  text-transform: uppercase;
 }
 
-@media(min-width: $tablet-width) {
+.form-application__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
   .form-application__call-to-action {
+    margin-bottom: 64px;
+    padding-right: 348px;
+    padding-left: 70px;
+
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .form-application__wrapper {
+    padding-right: 70px;
     padding-left: 70px;
-    padding-right: 348px;
-    margin-bottom: 64px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-application__call-to-action {
+    box-sizing: border-box;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 870px;
+    padding-left: 40px;
+  }
+
+  .form-application__wrapper {
+    box-sizing: border-box;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

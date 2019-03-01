@@ -1,7 +1,7 @@
 .logo-text {
+  @include hover-focus;
+
   h3 {
     @include reset;
   }
-
-  @include hover-focus;
 }

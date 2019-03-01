@@ -57,7 +57,7 @@ function switchExamples() {
       imgBefore.style.clip = 'rect(auto ' + widthBlock + 'px auto auto)';
       imgAfter.style.clip = 'rect(auto auto auto ' + widthBlock + 'px)';
 
-       exampleRange.stepUp(100);
+      exampleRange.stepUp(100);
     }
 
     exampleRange.oninput = toChangeImage;

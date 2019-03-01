@@ -9,23 +9,23 @@ section.form-application
           fieldset.form__textfields
             .form__textfields-block
               label(class="form__textfields-label label" for="name") Имя:*
-              input.form__textfields-input.input-text( type="text" id="name" name="name" placeholder="Барсик")
+              input.form__textfields-input.input-text( type="text" id="name" name="name" placeholder="Барсик" required)
             .form__textfields-block
               label(class="form__textfields-label label" for="weight") Вес (кг):*
-              input.form__textfields-input.input-text( type="text" id="weight" name="weight" placeholder="7")
+              input.form__textfields-input.input-text( type="number" id="weight" name="weight" placeholder="7" required)
             .form__textfields-block
               label(class="form__textfields-label label" for="age") Возраст (лет):
-              input.form__textfields-input.input-text( type="text" id="age" name="age" placeholder="7")
+              input.form__textfields-input.input-text( type="number" id="age" name="age" placeholder="7")
           fieldset.form__radio
             ul.form__list-radio
               li.form__list-radio-item
-                input.form__radio-input(type="radio" name="program" value="slim" id="slim" checked)
+                input.form__radio-input.visually-hidden(type="radio" name="program" value="slim" id="slim" checked)
                 label(class="form__radio-label label" for="slim") Похудение
               li.form__list-radio-item
-                input.form__radio-input(type="radio" name="program" value="pro" id="pro")
+                input.form__radio-input.visually-hidden(type="radio" name="program" value="pro" id="pro")
                 label(class="form__radio-label label" for="pro") Набор массы
               li.form__list-radio-item
-                input.form__radio-input(type="radio" name="program" value="need-advice" id="need-advice")
+                input.form__radio-input.visually-hidden(type="radio" name="program" value="need-advice" id="need-advice")
                 label(class="form__radio-label label" for="need-advice") Не знаю (нужен ваш совет)
       article.form__contacts-data
         h3.form__contacts-title.form-title.block-title
@@ -33,12 +33,12 @@ section.form-application
         .form__contacts-wrapper
           .form__contacts-block
             label(class="form__contacts-label label" for="email") E-mail:*
-            input.form__contacts-input.input-text(type="email" id="email" name="email" placeholder="kuklachev@gmail.com")
+            input.form__contacts-input.input-text(type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required)
             svg.form__contacts-icon.form__contacts-icon--mail(width="17" height="13")
               use(xlink:href="#mail")
           .form__contacts-block
-            label(class="form__contacts-label label" for="phone") Телефон:*
-            input.form__contacts-input.input-text(type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90")
+            label(class="form__contacts-label label" for="tel-number") Телефон:*
+            input.form__contacts-input.input-text(type="tel" id="tel-number" name="phone" placeholder="8 (960) 900-60-90" maxlength="15" required)
             svg.form__contacts-icon.form__contacts-icon--phone(width="21" height="20")
               use(xlink:href="#phone")
       article.form__description
@@ -51,29 +51,18 @@ section.form-application
           span.form__checkboxes-title-text.form-title__text Дополнительно
         ul.form__list-checkboxes
           li.form__list-checkbox-item
-            input.form__checkbox-input(type="checkbox" name="sweetener" id="sweetener" checked)
+            input.form__checkbox-input.visually-hidden(type="checkbox" name="sweetener" id="sweetener" checked)
             label(class="form__checkbox-label label" for="sweetener") Сахарозаменитель
           li.form__list-checkbox-item
-            input.form__checkbox-input(type="checkbox" name="drinking-water" id="drinking-water")
+            input.form__checkbox-input.visually-hidden(type="checkbox" name="drinking-water" id="drinking-water")
             label(class="form__checkbox-label label" for="drinking-water") Питьевая вода
           li.form__list-checkbox-item
-            input.form__checkbox-input(type="checkbox" name="milk" id="milk")
+            input.form__checkbox-input.visually-hidden(type="checkbox" name="milk" id="milk")
             label(class="form__checkbox-label label" for="milk") Молоко
           li.form__list-checkbox-item
-            input.form__checkbox-input(type="checkbox" name="vitamins" id="vitamins")
+            input.form__checkbox-input.visually-hidden(type="checkbox" name="vitamins" id="vitamins")
             label(class="form__checkbox-label label" for="vitamins") Витамины
       article.form__button
+        h3.visually-hidden Кнопка отправки формы
         button.form__button-submit.button(type="submit") Отправить заявку
-        small.form__button-signature * - Обязательные поля
-
-
-
-
-
-
-
-
-
-
-
-
+        small.form__button-signature * &mdash; Обязательные поля

@@ -1,10 +1,11 @@
 .copyright__link {
   display: flex;
+
   flex-wrap: wrap;
   justify-content: space-between;
 
   &:hover .copyright__icon {
-    fill:$accent-color;
+    fill: $accent-color;
   }
 
   &:focus {
@@ -12,16 +13,18 @@
   }
 
   &:focus .copyright__icon {
-    fill:$accent-color;
+    fill: $accent-color;
   }
 }
 
 .copyright__title {
+  font-family: "Arial", sans-serif;
   font-size: 16px;
-  line-height: 16px;
-  font-family: "Arial",sans-serif;
-  color: #444444;
   font-weight: 400;
+  line-height: 16px;
+
+  color: #444444;
+
   align-self: center;
 }
 
@@ -33,9 +36,8 @@
   fill: #666666;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .copyright__icon {
     padding-left: 23px;
   }
 }
-

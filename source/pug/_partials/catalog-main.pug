@@ -9,7 +9,7 @@ section.catalog-main
               source(type="image/webp" media="(min-width:768px)" srcset="img/" + item["nameImg"] + "-tablet-desktop.webp 1x, img/" + item["nameImg"] + "-tablet-desktop@2x.webp 2x")
               source(type="image/webp" srcset="img/" + item["nameImg"] + "-mobile.webp 1x, img/" + item["nameImg"] + "-mobile@2x.webp 2x")
 
-              source(media="(min-width:768px)" srcset="img/" + item["nameImg"] + "-tablet-desktop.png 1x, img/" + item["nameImg"] + " v-tablet-desktop@2x.png 2x")
+              source(media="(min-width:768px)" srcset="img/" + item["nameImg"] + "-tablet-desktop.png 1x, img/" + item["nameImg"] + "-tablet-desktop@2x.png 2x")
               img(class="products__image " + item["classImg"]   src="img/" + item["nameImg"] + "-mobile.jpg" srcset="img/" + item["nameImg"] + "-mobile@2x.jpg 2x" alt=item["alt"] width=item["width"] height=item["height"])
 
             .products__property
@@ -32,5 +32,3 @@ section.catalog-main
           h3.products__subtitle Показать еще 100500 товаров
           p.products__subtext На самом деле вкусов гораздо больше!
           button(class="products__button-show-all button") Показать все
-
-

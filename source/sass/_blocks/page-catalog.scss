@@ -2,30 +2,34 @@
   padding-top: 15px;
   padding-bottom: 28px;
   padding-left: 20px;
+
   font-size: 36px;
   line-height: 60px;
-  border-bottom:1px solid #ededed;
+
+  border-bottom: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
   .page-catalog__title {
-    font-size: 60px;
-    line-height: 60px;
-    border-bottom: none;
     margin-bottom: 56px;
     padding-top: 43px;
     padding-left: 30px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-catalog__title {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 1300px;
-    margin-bottom: 79px;
     box-sizing: border-box;
-    margin-left: auto;
+    width: 1300px;
     margin-right: auto;
+    margin-bottom: 79px;
+    margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
